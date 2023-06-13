@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tusk_4</title>
+  </head>
+  <body>
+    <h1>Задача 4</h1>
+    <script>
+      //Задача 4. З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+
+      // вік людини - humanAge
+      //1. Вводимо необхідні змінні
+      let humanAge = parseInt(prompt("Введіть свій вік"));
+      let resultMassage;
+      //2. Пишемо рішення
+      if (humanAge >= 0 && humanAge <= 5) {
+        resultMassage = "Дитина ходить в садочок";
+      } else if (humanAge >= 6 && humanAge <= 17) {
+        resultMassage = "Школяр";
+      } else if (humanAge >= 18 && humanAge <= 23) {
+        resultMassage = "Студент";
+      } else if (humanAge >= 23 && humanAge <= 60) {
+        resultMassage = "Працівник";
+      } else {
+        resultMassage = "Пенсіонер";
+      }
+      //3. Виводимо рішення
+      document.write(resultMassage);
+    </script>
+  </body>
+</html>
